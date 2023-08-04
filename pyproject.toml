@@ -1,0 +1,18 @@
+[project]
+name = "no-frills-nix-python-template"
+version = "0.0.1"
+authors = [ 
+    { name = "Farid Zakaria", email = "farid.m.zakaria@gmail.com" }, 
+]
+readme = "README.md"
+description = "A simple Nix template for building and distributing Python applications"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.scripts]
+app = "app.cli:start"
+
+[tool.setuptools]
+packages = ["app"]
